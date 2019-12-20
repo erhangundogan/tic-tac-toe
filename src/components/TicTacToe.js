@@ -1,13 +1,17 @@
 import React from 'react';
-import Table from './Table';
+import GameBoard from './GameBoard';
 import useTicTacToe from '../hooks/useTicTacToe';
+import InfoBoard from './InfoBoard';
 import './styles.css';
 
 const TicTacToe = () => {
-  const { matrix, onClick } = useTicTacToe();
+  const { winsCount, drawsCount, restart, isFinished, isPlayersTurn, board, onClick } = useTicTacToe();
 
   return (
-    <Table onClick={ onClick } matrix={ matrix } />
+    <div className="container">
+      <GameBoard { ...{ board, onClick } } />
+      <InfoBoard { ...{ winsCount, drawsCount, restart, isFinished, isPlayersTurn } } />
+    </div>
   );
 };
 

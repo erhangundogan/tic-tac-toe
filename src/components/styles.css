@@ -1,5 +1,60 @@
+.board td {
+  padding: 0;
+  margin: 0;
+  border: solid 1px #666;
+}
+
 .cell {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: lighter;
   text-align: center;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.info {
+  margin-left: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.info div {
+  margin: 10px 0;
+}
+
+.col-numbers {
+  margin-left: 20px;
+  display: none;
+}
+.col-numbers div {
+  display: inline-block;
+  width: 64px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.row-numbers-and-board {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.row-numbers {
+  display: none;
+  flex-flow: column nowrap;
+}
+
+.row-numbers div {
+  display: inline-block;
+  height: 64px;
+  line-height: 64px;
+  text-align: left;
+  width: 20px;
 }
