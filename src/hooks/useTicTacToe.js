@@ -11,8 +11,8 @@ const initial = [
 
 const cloneMultiArray = (array) => array.map(item => item.slice());
 
-function useTicTacToe() {
-  const [board, setBoard] = useState(() => cloneMultiArray(initial));
+function useTicTacToe(defaultBoard) {
+  const [board, setBoard] = useState(() => cloneMultiArray(defaultBoard || initial));
   const [isPlayersTurn, setPlayersTurn] = useState(true);
   const [winsCount, setWinsCount] = useState({ x: 0, o: 0 });
   const [drawsCount, setDrawsCount] = useState(0);
@@ -70,7 +70,15 @@ function useTicTacToe() {
     setPlayersTurn(!isPlayersTurn);
   };
 
-  return { winsCount, drawsCount, restart, isFinished, isPlayersTurn, board, onClick };
+  return {
+    winsCount,
+    drawsCount,
+    restart,
+    isFinished,
+    isPlayersTurn,
+    board,
+    onClick
+  };
 }
 
 export default useTicTacToe;

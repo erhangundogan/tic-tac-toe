@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TicTacToe renders 1`] = `
+<div
+  class="container"
+>
+  <div>
+    <div
+      class="col-numbers"
+    >
+      <div>
+        0
+      </div>
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="row-numbers-and-board"
+    >
+      <div
+        class="row-numbers"
+      >
+        <div>
+          0
+        </div>
+        <div>
+          1
+        </div>
+        <div>
+          2
+        </div>
+      </div>
+      <table
+        class="board"
+      >
+        <tbody
+          id="board"
+        >
+          <tr>
+            <td
+              class="cell"
+              id="00"
+            />
+            <td
+              class="cell"
+              id="01"
+            />
+            <td
+              class="cell"
+              id="02"
+            />
+          </tr>
+          <tr>
+            <td
+              class="cell"
+              id="10"
+            />
+            <td
+              class="cell"
+              id="11"
+            />
+            <td
+              class="cell"
+              id="12"
+            />
+          </tr>
+          <tr>
+            <td
+              class="cell"
+              id="20"
+            />
+            <td
+              class="cell"
+              id="21"
+            />
+            <td
+              class="cell"
+              id="22"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="info"
+  >
+    <div>
+      X's turn
+    </div>
+    <div>
+      X has no winning!
+    </div>
+    <div>
+      O has no winning!
+    </div>
+    <div />
+    <div />
+  </div>
+</div>
+`;

@@ -5,12 +5,26 @@ import InfoBoard from './InfoBoard';
 import './styles.css';
 
 const TicTacToe = () => {
-  const { winsCount, drawsCount, restart, isFinished, isPlayersTurn, board, onClick } = useTicTacToe();
+  const {
+    winsCount,
+    drawsCount,
+    restart,
+    isFinished,
+    isPlayersTurn,
+    board,
+    onClick
+  } = useTicTacToe();
 
   return (
     <div className="container">
       <GameBoard { ...{ board, onClick } } />
-      <InfoBoard { ...{ winsCount, drawsCount, restart, isFinished, isPlayersTurn } } />
+      <InfoBoard { ...{
+        winsCount,
+        drawsCount,
+        restart,
+        isFinished,
+        isPlayersTurn } }
+      />
     </div>
   );
 };
