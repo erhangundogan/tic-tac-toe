@@ -1,4 +1,4 @@
-function isMovesLeft(board) {
+function hasMovesLeft(board) {
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
       if (board[i][j] === null) {
@@ -9,4 +9,4 @@ function isMovesLeft(board) {
   return false;
 }
 
-export default isMovesLeft;
+export default hasMovesLeft;

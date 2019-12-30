@@ -1,6 +1,6 @@
 import checkCrossLines from './checkCrossLines';
 import checkStraightLines from './checkStraightLines';
-import isMovesLeft from './isMovesLeft';
+import hasMovesLeft from './hasMovesLeft';
 
 const player = 'x';
 const opponent = 'o';
@@ -30,7 +30,7 @@ function minimax(board, depth, isMax) {
     return score;
   }
 
-  if (isMovesLeft(board) === false) {
+  if (hasMovesLeft(board) === false) {
     return 0;
   }
 

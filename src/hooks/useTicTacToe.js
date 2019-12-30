@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import checkWin from '../helpers/checkWin';
 import findBestMove from '../helpers/minimax';
-import isMovesLeft from '../helpers/isMovesLeft';
+import hasMovesLeft from '../helpers/hasMovesLeft';
 
 const initial = [
   [null, null, null],
@@ -34,7 +34,7 @@ function useTicTacToe(defaultBoard) {
         setWinsCount({ x: winsCount.x + (isPlayersTurn && 1), o: winsCount.o + (!isPlayersTurn && 1) });
         return setIsFinished(true);
       }
-      if (!isMovesLeft(board)) {
+      if (!hasMovesLeft(board)) {
         console.log('Draw!');
         setDrawsCount(drawsCount + 1);
         return setIsFinished(true);
