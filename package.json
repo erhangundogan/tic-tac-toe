@@ -6,11 +6,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
+  "description": "tic-tac-toe game developed with react",
   "author": "Erhan Gundogan <erhan.gundogan@gmail.com>",
   "devDependencies": {
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
-    "jest": "^24.9.0",
     "react-scripts": "^3.4.1",
     "react-test-renderer": "^16.13.1"
   },
