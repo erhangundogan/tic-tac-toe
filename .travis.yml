@@ -5,6 +5,11 @@ notifications:
   email: false
 node_js: '12'
 install: yarn
+dist: trusty
+addons:
+  sonarcloud:
+    organization: "ERHANGUNDOGAN"
 script:
   - yarn build
   - yarn test -- --coverage --watchAll=false
+  - sonar-scanner
