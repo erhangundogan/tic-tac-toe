@@ -8,7 +8,7 @@ install: yarn
 dist: trusty
 addons:
   sonarcloud:
-    organization: 'Erhan Gundogan'
+    organization: erhangundogan
     token: ${SONAR_TOKEN}
 script:
   - yarn build
